@@ -7,11 +7,13 @@
      d)Если больше 21 вывести “You should visit Vietnam.”
      e)Все остальные варианты. Вывести “Travell everywhere”"""
 
-age = input(" How old are you?  \t")
-if age.isdigit():
-    if int(age) == 21:
+data_user = input(" Еnter the year of birth: \t")
+data_today: int = 2022
+if data_user.isdigit():
+    age_user = data_today - int(data_user)
+    if int(age_user) == 21:
         print("You should visit Holland.")
-    elif int(age) > 21:
+    elif int(age_user) > 21:
         print("You should visit Vietnam.")
     else:
         print("Travell everywhere")
