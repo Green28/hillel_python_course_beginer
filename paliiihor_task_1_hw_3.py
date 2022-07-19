@@ -11,9 +11,9 @@ data_user = input(" Еnter the year of birth: \t")
 data_today: int = 2022
 if data_user.isdigit():
     age_user = data_today - int(data_user)
-    if int(age_user) == 21:
+    if age_user == 21:
         print("You should visit Holland.")
-    elif int(age_user) > 21:
+    elif age_user > 21:
         print("You should visit Vietnam.")
     else:
         print("Travell everywhere")
