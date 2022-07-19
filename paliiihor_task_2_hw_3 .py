@@ -20,26 +20,16 @@ elif "женя" in user_name:
     print(f"Советую {user_name.capitalize()} посмотреть 'TENET'", end="😩\n")
 elif "guido" in user_name:
     print("Огромное спасибо!", end="😎\n")
-else:
-    pass
 if "male" in gender:
     if age < 11:
         print(f"Советую {user_name.capitalize()} посмотреть \"TMNT\"", end="😏\n")
     elif 10 < age < 14 or age > 30:
         print(f"Советую {user_name.capitalize()} посмотреть \"StarWars\" или \"Мандалорец\"", end="⭐\n")
-    else:
-        pass
-else:
-    pass
 if "female" in gender:
     if age < 16:
         print(f"Советую {user_name.capitalize()} посмотреть \"Инсургент\"", end="😩\n")
     elif 22 < age < 32:
         print(f"Советую {user_name.capitalize()} посмотреть \"Трансформеры\"", end="😩\n")
-    else:
-        pass
-else:
-    pass
-
+        
 """ Питання. Чи потрібно закривати в кінці  else ,  pass? Якщо мені else не потрібен? В задачі зверху я позачиняв,
  але чи потрібно було це, і нащось сприяє на це чи ні?"""
