@@ -64,12 +64,10 @@ print("{0} {1}".format(name.upper(), name.lower()))
 Результат: black, green, red, white"""
 
 print("Задача 5")
-colors1: list = input("Write colors: ").split(", ")
-colors2: list = []
-for i in colors1:
-    if i not in colors2:
-        colors2.append(i)
-print(*sorted(colors2), sep=", ")
+colors1 = ['red', 'white', 'black', 'red', 'green', 'black']
+colors1 = set(colors1)
+colors1 =list(colors1)
+print(*sorted(colors1), sep=", ")
 
 """Задача 6. 5 баллов
 Тема Кортеж и работа сним.
