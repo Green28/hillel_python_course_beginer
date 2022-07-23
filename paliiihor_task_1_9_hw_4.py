@@ -119,18 +119,10 @@ for i in range(-99, 100, 3):
 print(Тrue) не слово! а объект подставить."""
 
 print("Задача 9")
-a: list = ['bread', 'milk', 'kolbasa']
-b: list = ['potatos', 'candy', 'milk', 'kolbasa']
-c: list = []
-if len(a) > len(b):
-    for i in a:
-        if i in b:
-            c.append(i)
-elif len(b) > len(a):
-    for i in b:
-        if i in a:
-            c.append(i)
-if len(c) == 0:
-    print("lists don't match")
-else:
-    print(*c, sep=", ", end=".")
+a: list = 'bread,  kolbasa'.split(', ')
+b: list = 'potatos, candy, milk, kolbasa'.split(', ')
+for i in a:
+    for j in b:
+        if i == j:
+            print(True)
+            exit(0)
